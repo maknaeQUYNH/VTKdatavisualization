@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Com S 402 Team 7</title>
+    <style>
+      :root {
+          --dark: #374151;
+          --darker: #1F2937;
+          --darkest: #111827;
+          --grey: #6B7280;
+          --light: #EEE;
+          --pink: #EC4899;
+          --purple: #8B5Cf6;
+      }
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: var(--light);
+        margin: auto;
+        text-align: center;
+      }
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: var(--light);
+        margin: auto;
+        text-align: center;
+       
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: var(--darkest);
+        color: #fff;
+        margin: auto;
+     
+      }
+
+      #file-submit-form{
+          display: flex;
+      }
+
+      #file-submit-input {
+          flex: 1 1 0%;
+          background-color: var(--darker);
+          padding: 1rem;
+          border-radius: 1rem;
+          margin-right: 1rem;
+          color: var(--light);
+          font-size: 1.25rem;
+      }
+
+      #file-submit-input::placeholder {
+          color: var(--light);
+      }
+
+      #new-file-submit {
+          color: var(--pink);
+          font-size: 1.25rem;
+          background-image: linear-gradient(to right, var(--pink), var(--purple));
+          -webkit-background-clip: text;
+          /* -webkit-text-fill-color: transparent; */
+          cursor: pointer;
+          transition: 0.4s;
+      }
+
+      ul{
+        list-style: none;
+        display: flex;
+        gap: 5%;
+        font-size: 20px;
+      }
+
+      div{
+        margin: auto;
+      }
+
+      ul li:first-child {
+        color: rgb(245, 120, 120);
+        font-weight: bold;
+        font-size: larger;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li> Paraview </li>
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="home.html"> Geometry </a></li>
+          <li><a href="visual.html"> Visualization </a></li>
+        </ul>
+      </nav>
+   </header>
+   <div>
+    <h2>Data Visualization</h2>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">           <script type="text/javascript" src="https://unpkg.com/vtk.js@8.3.3/dist/vtk.js"></script>
+
+    <link rel="stylesheet" href="visual.css"/>
+    <style>
+      ul{
+        margin-top: 5px;
+        list-style: none;
+        display: flex;
+        gap: 5%;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      div{
+        margin: auto;
+      }
+
+      ul li:first-child {
+        color: rgb(245, 120, 120);
+        font-weight: bold;
+        font-size: larger;
+      }
+    </style>
+</head>    
+<body>
+    <!-- tpye = text is where you modify for it to accept specific file types, line 17 -->
+    <header>
+        <nav>
+          <ul>
+            <li> Paraview </li>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="home.html"> Geometry </a></li>
+            <li><a href="visual.html"> Visualization </a></li>
+          </ul>
+        </nav>
+       
+        <div id="vtk-renderer" class="col-12 col-sm-4" style="height: fit-content; width: fit-content; align-items: center; justify-content: center; padding: 0px; margin-top: 50px;"></div> 
+     </header>
+
+
+    <div class="fileUpload">
+        <input type="file" class="upload" />
+        <span>Upload</span>
+    </div>
+
+    <script src="visual.js"></script>
+</body>
+</html>
